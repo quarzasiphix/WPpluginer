@@ -1,0 +1,8 @@
+elementor
+wordpress-seo
+contact-form-7
+jetpack
+google-site-kit
+complianz-gdpr
+really-simple-ssl
+woocommerce
