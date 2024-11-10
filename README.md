@@ -1,2 +1,2 @@
 # WPpluginer
-plugin downloader for wordpress
+Dynamic Ecommerce and Standard website Setup plugins.
