@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Dynamic Site Plugin & Theme Downloader with Elementor Templates
+Plugin Name: Ecommerce WP Setup
 Description: A plugin to dynamically download and install site plugins, Hello Elementor theme, set up an Elementor header and footer, and create a Home page.
 Version: 1.4
-Author: Your Name
+Author: Quarza
 */
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
@@ -175,7 +175,7 @@ function site_downloader_page() {
 
     // Get installed plugins and display those that match the fetched slugs
     $all_plugins = get_plugins();
-    echo '<h2>Selected Installed Plugins Matching Fetched List</h2>';
+    echo '<h2>Ecommerce plugins and setup</h2>';
     echo '<table class="widefat fixed" cellspacing="0">';
     echo '<thead><tr><th>Plugin</th><th>Version</th><th>Status</th><th>Actions</th></tr></thead><tbody>';
 
