@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Ecommerce WP Setup
+Plugin Name: Dynamic Standard WP Setup
 Description: A plugin to dynamically download and install site plugins, Hello Elementor theme, set up an Elementor header and footer, and create a Home page.
 Version: 1.4
 Author: Quarza
