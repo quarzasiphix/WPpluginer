@@ -106,6 +106,7 @@ add_action('admin_menu', 'site_downloader_menu');
 function site_downloader_page() {
     global $site_plugins, $site_theme;
 
+    echo '<h1> version 0.1 <h1>';
     echo '<div class="wrap"><h1>Site Plugins & Theme with Elementor Templates</h1>';
     echo '<form method="post">';
     echo '<input type="submit" name="download_site" class="button button-primary" value="Download Site Plugins, Theme, & Create Templates">';
