@@ -205,6 +205,6 @@ function site_downloader_page() {
     echo '</tbody></table>';
 
     // Footer
-    echo '<p style="margin-top: 20px; text-align: center;">Made by WebTover, Version 0.1</p>';
+    echo '<p style="margin-top: 20px; text-align: center;">Made by WebTover, Version 0.2</p>';
 }
 ?>
