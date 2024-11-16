@@ -69,49 +69,6 @@ function download_site_plugins_and_theme($plugins, $theme_slug) {
     }
 }
 
-// Function to create header and footer templates in Elementor
-function create_elementor_templates() {
-    if (class_exists('Elementor\Plugin')) {
-        $header_template = [
-            'post_title' => 'Header',
-            'post_content' => '',
-            'post_status' => 'publish',
-            'post_type' => 'elementor_library',
-            'meta_input' => [
-                '_elementor_template_type' => 'header',
-                '_elementor_conditions' => [
-                    [
-                        'type' => 'include',
-                        'sub_id' => 'all',
-                        'sub_name' => 'Entire Site',
-                    ],
-                ],
-            ],
-        ];
-
-        $footer_template = [
-            'post_title' => 'Footer',
-            'post_content' => '',
-            'post_status' => 'publish',
-            'post_type' => 'elementor_library',
-            'meta_input' => [
-                '_elementor_template_type' => 'footer',
-                '_elementor_conditions' => [
-                    [
-                        'type' => 'include',
-                        'sub_id' => 'all',
-                        'sub_name' => 'Entire Site',
-                    ],
-                ],
-            ],
-        ];
-
-        // Insert header and footer templates into Elementor library
-        wp_insert_post($header_template);
-        wp_insert_post($footer_template);
-    }
-}
-
 // Function to create a blank Home page and set it as the default homepage
 function create_and_set_home_page() {
     // Check if a page with the title "Home" already exists
@@ -168,7 +125,6 @@ function site_downloader_page() {
     if (isset($_POST['download_site'])) {
         delete_default_plugins(); // Delete "Akismet" and "Hello Dolly" plugins
         download_site_plugins_and_theme($site_plugins, $site_theme);
-        create_elementor_templates();
         create_and_set_home_page(); // Call the function to create and set the Home page
         echo '<div class="updated"><p>Site plugins, theme, Elementor templates, and Home page setup completed.</p></div>';
     }

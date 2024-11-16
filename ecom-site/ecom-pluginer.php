@@ -168,7 +168,7 @@ function site_downloader_page() {
     if (isset($_POST['download_site'])) {
         delete_default_plugins(); // Delete "Akismet" and "Hello Dolly" plugins
         download_site_plugins_and_theme($site_plugins, $site_theme);
-        create_elementor_templates();
+        //create_elementor_templates();
         create_and_set_home_page(); // Call the function to create and set the Home page
         echo '<div class="updated"><p>Site plugins, theme, Elementor templates, and Home page setup completed.</p></div>';
     }
